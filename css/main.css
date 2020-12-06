@@ -606,7 +606,7 @@ body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .logar
             flex-direction: column;
   }
   body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row .form-inline .custom-select {
-    width: 52%;
+    width: 54%;
   }
   body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .lembrar label {
     font-size: 11px;
