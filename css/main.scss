@@ -25,7 +25,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 520px;
     
     #area-geral{
         width: 80vw;
@@ -33,7 +32,6 @@ body{
         background-color: var(--color-prin);
         border-radius: 10px;
         overflow: hidden;
-        min-height: 520px;
             .tela-inicial{
                 display: flex;
                 flex-direction: row-reverse;
@@ -41,7 +39,6 @@ body{
                 width: 100%;
                 height: 100%;
                 transition: 0.8s;
-                min-height: 620px;
                 
                     .area-bv{
                         background: linear-gradient(180deg, #0c0e1c 34%, #181c34 72%);
@@ -56,7 +53,6 @@ body{
                         align-items: center;
                         text-align: center;
                         color: white;
-                        min-height: 620px;
                         .area1{
                             display: flex;
                             justify-content: center;
@@ -113,7 +109,7 @@ body{
                         }
                     .tela-login{
                         width: 45%;
-                        height: 100vh;
+                        height: 100%;
                         padding: 20px;
                         background:rgb(224, 244, 252);
                         transition: 0.8s;
@@ -122,7 +118,7 @@ body{
                         align-items: flex-start;
                         padding-top: 35px;
                         border-right: var(--color-terc) 3px solid;
-                        min-height: 620px;
+                        min-height: 560px;
                         .area-login{
                             padding-left: 15px;
                             padding-right: 15px;
@@ -252,12 +248,12 @@ body{
                         }
                     .tela-registro{
                         width: 45%;
-                        height: 100vh;
+                        height: 100%;
                         background:rgb(224, 244, 252);
                         display:none;
                         transition: 0.8s;
                         align-items: center;
-                        min-height: 620px;
+                        min-height: 560px;
                         .area-registro{
                             padding-left: 15px;
                             padding-right: 15px;
@@ -424,7 +420,7 @@ body{
         align-self: center;
     }
     body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input {
-        width: 95%;
+        width: 100%;
     }
     body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row {
         
@@ -435,6 +431,7 @@ body{
         width: 52%;
 
        
+
     }
     body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .lembrar label {
        
