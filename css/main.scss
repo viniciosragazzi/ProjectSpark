@@ -28,7 +28,7 @@ body{
     
     #area-geral{
         width: 80vw;
-        height: 85vh;
+        height: 95vh;
         background-color: var(--color-prin);
         border-radius: 10px;
         overflow: hidden;
@@ -56,11 +56,11 @@ body{
                         .area1{
                             display: flex;
                             justify-content: center;
-                            align-items: center;
+                            
                             
                             a{
                                 position: relative;
-                                bottom: 30px;
+                                bottom: 111px;
                                 text-align: center;
                                 opacity: 0;
                                             animation: surgir1 1s 0.8s forwards;
@@ -106,10 +106,11 @@ body{
                             
                            
 
-                    }
+                        }
                     .tela-login{
                         width: 45%;
                         height: 100%;
+                        padding: 20px;
                         background:rgb(224, 244, 252);
                         transition: 0.8s;
                         display: flex;
@@ -132,7 +133,7 @@ body{
                             }
                             p{
                                 color: var(--color-icons);
-                                font-size: 14px;
+                                font-size: 13px;
                                 opacity: 0;
                                 animation: surgir1 1s 0.4s forwards;
                                 span{
@@ -147,7 +148,7 @@ body{
                                     width: 80%;
                                         label{
                                             color: #868d94;
-                                            font-size: 14px;
+                                            font-size: 12px;
                                             opacity: 0;
                                             animation: surgir1 1s 0.6s forwards;
                                         }
@@ -162,6 +163,7 @@ body{
     
                                             &::placeholder{
                                                 transition: 0.3s;
+                                                font-size:12px;
                                             }
                                             &:focus{
                                                 &::placeholder{
@@ -200,7 +202,7 @@ body{
                                     .lembrar{
                                         label{
                                             color: #2C72B2;
-                                            font-size: 14px;
+                                            font-size: 13px;
                                             cursor: pointer;
                                         }
                                         i{
@@ -211,7 +213,7 @@ body{
                                         a{
                                             color: #2C72B2;
                                             text-decoration: none;
-                                            font-size: 14px;
+                                            font-size: 13px;
     
                                             &:hover{
                                                 font-weight: 600;
@@ -221,26 +223,16 @@ body{
                                     }
                                 }
                                 button{
-                                    width: 150px;
-                                    height: 50px;
-                                    background: linear-gradient(90deg, rgb(57, 135, 204) 31%, rgb(71, 159, 221) 66%);
-                                    color: rgb(255, 255, 255);
-                                    transition: 0.8s;
+                                    width: 120px;
+                                    height: 45px;
+                                    margin-top: 13px;
                                     border-radius: 15px;
-                                    opacity: 0;
-                                            animation: surgir1 1s 0.9s forwards;
-
-                                    &:hover{
-                                        
-                                        background-color: rgb(26, 94, 153)  ;
-                                        color: rgb(129, 203, 252);
-                                    }
                                 }
                                 .criar{
                                     justify-content: center;
                                     align-items: center;
                                     display: flex;
-                                    margin-top: 40px;
+                                    margin-top: 25px;
 
                                     span{
                                         cursor: pointer;
@@ -253,9 +245,8 @@ body{
                             }
                             
                         }
-                    }
                     .tela-registro{
-                        width: 50%;
+                        width: 45%;
                         height: 100%;
                         background:rgb(224, 244, 252);
                         display:none;
@@ -276,7 +267,7 @@ body{
                             }
                             p{
                                 color: var(--color-icons);
-                                font-size: 14px;
+                                font-size: 13px;
                                 padding-left: 10px;
                                 opacity: 0;
                                 animation: surgir1 1s 0.4s forwards;
@@ -293,10 +284,10 @@ body{
                                 .form-group{
                                     display: flex;
                                     flex-direction: column;
-                                  
+                                    
                                         label{
                                             color: #868d94;
-                                            font-size: 14px;
+                                            font-size: 12px;
                                             opacity: 0;
                                             animation: surgir1 1s 0.6s forwards;
     
@@ -311,6 +302,7 @@ body{
     
                                             &::placeholder{
                                                 transition: 0.3s;
+                                                font-size:14px;
                                             }
                                             &:focus{
                                                 &::placeholder{
@@ -323,7 +315,7 @@ body{
                                                     color: rgb(109, 150, 194);
                                                 }
                                             }
-                                           
+                                            
                                         }
                                         
                                 }
@@ -335,21 +327,15 @@ body{
                                     button{
                                         width: 120px;
                                         height: 50px;
-                                        background: linear-gradient(90deg, rgb(57, 135, 204) 31%, rgb(71, 159, 221) 66%);
-                                        color: rgb(255, 255, 255);
-                                        transition: 0.8s;
+                                        
                                         border-radius: 15px;
     
-                                        &:hover{
-                                            
-                                            background-color: rgb(26, 94, 153)  ;
-                                            color: rgb(129, 203, 252);
-                                        }
+                                    
                                     }
                                 }
                                 .logar{
                                     align-self: center;
-                                    
+                                    margin-top: 30px;
                                         span{
                                             cursor: pointer;
                                             &:hover{
@@ -359,7 +345,9 @@ body{
                                 }
                             }
                         }
+                        }
                     }
+                    
 
             }
         
@@ -367,7 +355,7 @@ body{
     
 }
 
-@media (min-width:730px) and (max-width:930px){
+@media (min-width:730px) and (max-width:936px){
     .area-bv .area1 h2 {
         
         display: none;
@@ -383,7 +371,7 @@ body{
     }
 }
 
-@media(max-width:729px){
+@media(max-width:773px){
     body #area-geral .tela-inicial .area-bv {
         display: none;
     }
@@ -391,7 +379,8 @@ body{
         width: 100%;
     }
     body #area-geral .tela-inicial .tela-login {
-        width: 110%;
+        padding-top: 22px;
+        width: 150%;
     }
     body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row .form-inline .custom-select { 
         width: 71%;
@@ -402,9 +391,10 @@ body{
 
 @media(max-width:423px){
     body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row button {
-        width: 107px;
-        height: 38px;
-        margin-top: 5px;
+        width: 118px;
+        height: 49px;
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
     body #area-geral .tela-inicial .tela-registro .area-registro h3 {
       
@@ -425,19 +415,52 @@ body{
     }
     body #area-geral .tela-inicial .tela-login .area-login .area-inputs button {
         margin-bottom: 35px;
+        align-self: center;
     }
     body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-control{
-        width: 100%;
+        width: 115%;
+    }
+    body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row {
+        
+        display: flex;
+        flex-direction: column;
+    }
+    body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row .form-inline .custom-select {
+        width: 52%;
+    }
+    body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .lembrar label {
+       
+        font-size: 11px;
+      
+    }
+    body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .esqueceu a {
+       
+        font-size: 11px;
+    }
+    body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group label {
+     
+        font-size: 12px;
+    }
+    body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group label {
+      
+        font-size: 12px;
+      
+    }
+    body #area-geral .tela-inicial .tela-login {
+      
+        padding-top: 19px;
     }
     
-    
+}
+@media (display-mode: fullscreen) {
+    body #area-geral {
+        width: 80vw;
+        height: 85vh;
+    }
 }
     
 @keyframes surgir1{
     100%{
         opacity: 1;
     }
-}
-.container {
-    max-width: 580px !important;
 }

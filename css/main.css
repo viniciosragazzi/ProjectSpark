@@ -35,7 +35,7 @@ body {
 
 body #area-geral {
   width: 80vw;
-  height: 85vh;
+  height: 95vh;
   background-color: var(--color-prin);
   border-radius: 10px;
   overflow: hidden;
@@ -89,14 +89,11 @@ body #area-geral .tela-inicial .area-bv .area1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 body #area-geral .tela-inicial .area-bv .area1 a {
   position: relative;
-  bottom: 30px;
+  bottom: 111px;
   text-align: center;
   opacity: 0;
   -webkit-animation: surgir1 1s 0.8s forwards;
@@ -152,6 +149,7 @@ body #area-geral .tela-inicial .area-bv .area2 .area-icons i:hover {
 body #area-geral .tela-inicial .tela-login {
   width: 45%;
   height: 100%;
+  padding: 20px;
   background: #e0f4fc;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -188,7 +186,7 @@ body #area-geral .tela-inicial .tela-login .area-login h3 span {
 
 body #area-geral .tela-inicial .tela-login .area-login p {
   color: var(--color-icons);
-  font-size: 14px;
+  font-size: 13px;
   opacity: 0;
   -webkit-animation: surgir1 1s 0.4s forwards;
           animation: surgir1 1s 0.4s forwards;
@@ -212,7 +210,7 @@ body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group 
 
 body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group label {
   color: #868d94;
-  font-size: 14px;
+  font-size: 12px;
   opacity: 0;
   -webkit-animation: surgir1 1s 0.6s forwards;
           animation: surgir1 1s 0.6s forwards;
@@ -232,21 +230,25 @@ body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group 
 body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input::-webkit-input-placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 12px;
 }
 
 body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input:-ms-input-placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 12px;
 }
 
 body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input::-ms-input-placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 12px;
 }
 
 body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input::placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 12px;
 }
 
 body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input:focus::-webkit-input-placeholder {
@@ -309,7 +311,7 @@ body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recupe
 
 body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .lembrar label {
   color: #2C72B2;
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
 }
 
@@ -320,7 +322,7 @@ body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recupe
 body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .esqueceu a {
   color: #2C72B2;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .esqueceu a:hover {
@@ -329,22 +331,10 @@ body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recupe
 }
 
 body #area-geral .tela-inicial .tela-login .area-login .area-inputs button {
-  width: 150px;
-  height: 50px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(31%, #3987cc), color-stop(66%, #479fdd));
-  background: linear-gradient(90deg, #3987cc 31%, #479fdd 66%);
-  color: white;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  width: 120px;
+  height: 45px;
+  margin-top: 13px;
   border-radius: 15px;
-  opacity: 0;
-  -webkit-animation: surgir1 1s 0.9s forwards;
-          animation: surgir1 1s 0.9s forwards;
-}
-
-body #area-geral .tela-inicial .tela-login .area-login .area-inputs button:hover {
-  background-color: #1a5e99;
-  color: #81cbfc;
 }
 
 body #area-geral .tela-inicial .tela-login .area-login .area-inputs .criar {
@@ -357,7 +347,7 @@ body #area-geral .tela-inicial .tela-login .area-login .area-inputs .criar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 body #area-geral .tela-inicial .tela-login .area-login .area-inputs .criar span {
@@ -368,8 +358,8 @@ body #area-geral .tela-inicial .tela-login .area-login .area-inputs .criar span:
   color: var(--color-sec);
 }
 
-body #area-geral .tela-registro {
-  width: 50%;
+body #area-geral .tela-inicial .tela-registro {
+  width: 45%;
   height: 100%;
   background: #e0f4fc;
   display: none;
@@ -380,12 +370,12 @@ body #area-geral .tela-registro {
           align-items: center;
 }
 
-body #area-geral .tela-registro .area-registro {
+body #area-geral .tela-inicial .tela-registro .area-registro {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-body #area-geral .tela-registro .area-registro h3 {
+body #area-geral .tela-inicial .tela-registro .area-registro h3 {
   font-weight: 600;
   font-size: 31px;
   color: #82A5CA;
@@ -394,25 +384,25 @@ body #area-geral .tela-registro .area-registro h3 {
           animation: surgir1 1s forwards;
 }
 
-body #area-geral .tela-registro .area-registro h3 span {
+body #area-geral .tela-inicial .tela-registro .area-registro h3 span {
   color: #2C72B2;
 }
 
-body #area-geral .tela-registro .area-registro p {
+body #area-geral .tela-inicial .tela-registro .area-registro p {
   color: var(--color-icons);
-  font-size: 14px;
+  font-size: 13px;
   padding-left: 10px;
   opacity: 0;
   -webkit-animation: surgir1 1s 0.4s forwards;
           animation: surgir1 1s 0.4s forwards;
 }
 
-body #area-geral .tela-registro .area-registro p span {
+body #area-geral .tela-inicial .tela-registro .area-registro p span {
   color: #2C72B2;
   font-weight: 600;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,7 +412,7 @@ body #area-geral .tela-registro .area-registro .area-inputs {
           flex-direction: column;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-group {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,46 +422,50 @@ body #area-geral .tela-registro .area-registro .area-inputs .form-group {
           flex-direction: column;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-group label {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group label {
   color: #868d94;
-  font-size: 14px;
+  font-size: 12px;
   opacity: 0;
   -webkit-animation: surgir1 1s 0.6s forwards;
           animation: surgir1 1s 0.6s forwards;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-group input {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input {
   border-color: none;
   opacity: 0;
   -webkit-animation: surgir1 1s 0.8s forwards;
           animation: surgir1 1s 0.8s forwards;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-group input:invalid {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input:invalid {
   border-color: #ff2f2f;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-group input::-webkit-input-placeholder {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input::-webkit-input-placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 14px;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-group input:-ms-input-placeholder {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input:-ms-input-placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 14px;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-group input::-ms-input-placeholder {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input::-ms-input-placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 14px;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-group input::placeholder {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input::placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 14px;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-group input:focus::-webkit-input-placeholder {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input:focus::-webkit-input-placeholder {
   font-size: 12px;
   position: relative;
   -webkit-transform: translateY(-12px);
@@ -480,7 +474,7 @@ body #area-geral .tela-registro .area-registro .area-inputs .form-group input:fo
   color: #6d96c2;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-group input:focus:-ms-input-placeholder {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input:focus:-ms-input-placeholder {
   font-size: 12px;
   position: relative;
   transform: translateY(-12px);
@@ -488,7 +482,7 @@ body #area-geral .tela-registro .area-registro .area-inputs .form-group input:fo
   color: #6d96c2;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-group input:focus::-ms-input-placeholder {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input:focus::-ms-input-placeholder {
   font-size: 12px;
   position: relative;
   transform: translateY(-12px);
@@ -496,7 +490,7 @@ body #area-geral .tela-registro .area-registro .area-inputs .form-group input:fo
   color: #6d96c2;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-group input:focus::placeholder {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input:focus::placeholder {
   font-size: 12px;
   position: relative;
   -webkit-transform: translateY(-12px);
@@ -505,7 +499,7 @@ body #area-geral .tela-registro .area-registro .area-inputs .form-group input:fo
   color: #6d96c2;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-row {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,37 +510,28 @@ body #area-geral .tela-registro .area-registro .area-inputs .form-row {
           animation: surgir1 1s 0.8s forwards;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-row button {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row button {
   width: 120px;
   height: 50px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(31%, #3987cc), color-stop(66%, #479fdd));
-  background: linear-gradient(90deg, #3987cc 31%, #479fdd 66%);
-  color: white;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   border-radius: 15px;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .form-row button:hover {
-  background-color: #1a5e99;
-  color: #81cbfc;
-}
-
-body #area-geral .tela-registro .area-registro .area-inputs .logar {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .logar {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-top: 30px;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .logar span {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .logar span {
   cursor: pointer;
 }
 
-body #area-geral .tela-registro .area-registro .area-inputs .logar span:hover {
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .logar span:hover {
   color: var(--color-sec);
 }
 
-@media (min-width: 730px) and (max-width: 930px) {
+@media (min-width: 730px) and (max-width: 936px) {
   .area-bv .area1 h2 {
     display: none;
   }
@@ -561,7 +546,7 @@ body #area-geral .tela-registro .area-registro .area-inputs .logar span:hover {
   }
 }
 
-@media (max-width: 729px) {
+@media (max-width: 773px) {
   body #area-geral .tela-inicial .area-bv {
     display: none;
   }
@@ -569,7 +554,8 @@ body #area-geral .tela-registro .area-registro .area-inputs .logar span:hover {
     width: 100%;
   }
   body #area-geral .tela-inicial .tela-login {
-    width: 110%;
+    padding-top: 22px;
+    width: 150%;
   }
   body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row .form-inline .custom-select {
     width: 71%;
@@ -578,9 +564,10 @@ body #area-geral .tela-registro .area-registro .area-inputs .logar span:hover {
 
 @media (max-width: 423px) {
   body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row button {
-    width: 107px;
-    height: 38px;
-    margin-top: 5px;
+    width: 118px;
+    height: 49px;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
   body #area-geral .tela-inicial .tela-registro .area-registro h3 {
     font-size: 24px;
@@ -600,9 +587,46 @@ body #area-geral .tela-registro .area-registro .area-inputs .logar span:hover {
   }
   body #area-geral .tela-inicial .tela-login .area-login .area-inputs button {
     margin-bottom: 35px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-control {
-    width: 100%;
+    width: 115%;
+  }
+  body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row .form-inline .custom-select {
+    width: 52%;
+  }
+  body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .lembrar label {
+    font-size: 11px;
+  }
+  body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .esqueceu a {
+    font-size: 11px;
+  }
+  body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group label {
+    font-size: 12px;
+  }
+  body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group label {
+    font-size: 12px;
+  }
+  body #area-geral .tela-inicial .tela-login {
+    padding-top: 19px;
+  }
+}
+
+@media (display-mode: fullscreen) {
+  body #area-geral {
+    width: 80vw;
+    height: 85vh;
   }
 }
 
@@ -616,9 +640,5 @@ body #area-geral .tela-registro .area-registro .area-inputs .logar span:hover {
   100% {
     opacity: 1;
   }
-}
-
-.container {
-  max-width: 580px !important;
 }
 /*# sourceMappingURL=main.css.map */
