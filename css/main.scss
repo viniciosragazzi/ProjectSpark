@@ -118,6 +118,7 @@ body{
                         align-items: flex-start;
                         padding-top: 35px;
                         border-right: var(--color-terc) 3px solid;
+                        min-height: 560px;
                         .area-login{
                             padding-left: 15px;
                             padding-right: 15px;
@@ -252,6 +253,7 @@ body{
                         display:none;
                         transition: 0.8s;
                         align-items: center;
+                        min-height: 560px;
                         .area-registro{
                             padding-left: 15px;
                             padding-right: 15px;

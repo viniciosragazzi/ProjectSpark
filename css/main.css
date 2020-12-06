@@ -164,6 +164,7 @@ body #area-geral .tela-inicial .tela-login {
           align-items: flex-start;
   padding-top: 35px;
   border-right: var(--color-terc) 3px solid;
+  min-height: 560px;
 }
 
 body #area-geral .tela-inicial .tela-login .area-login {
@@ -368,6 +369,7 @@ body #area-geral .tela-inicial .tela-registro {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 560px;
 }
 
 body #area-geral .tela-inicial .tela-registro .area-registro {
