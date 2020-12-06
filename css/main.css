@@ -593,8 +593,8 @@ body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .logar
         -ms-grid-row-align: center;
         align-self: center;
   }
-  body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-control {
-    width: 115%;
+  body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input {
+    width: 105%;
   }
   body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row {
     display: -webkit-box;
