@@ -31,6 +31,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 520px;
 }
 
 body #area-geral {
@@ -39,6 +40,7 @@ body #area-geral {
   background-color: var(--color-prin);
   border-radius: 10px;
   overflow: hidden;
+  min-height: 520px;
 }
 
 body #area-geral .tela-inicial {
@@ -56,6 +58,7 @@ body #area-geral .tela-inicial {
   height: 100%;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  min-height: 620px;
 }
 
 body #area-geral .tela-inicial .area-bv {
@@ -80,6 +83,7 @@ body #area-geral .tela-inicial .area-bv {
           align-items: center;
   text-align: center;
   color: white;
+  min-height: 620px;
 }
 
 body #area-geral .tela-inicial .area-bv .area1 {
@@ -148,7 +152,7 @@ body #area-geral .tela-inicial .area-bv .area2 .area-icons i:hover {
 
 body #area-geral .tela-inicial .tela-login {
   width: 45%;
-  height: 100%;
+  height: 100vh;
   padding: 20px;
   background: #e0f4fc;
   -webkit-transition: 0.8s;
@@ -164,7 +168,7 @@ body #area-geral .tela-inicial .tela-login {
           align-items: flex-start;
   padding-top: 35px;
   border-right: var(--color-terc) 3px solid;
-  min-height: 560px;
+  min-height: 620px;
 }
 
 body #area-geral .tela-inicial .tela-login .area-login {
@@ -361,7 +365,7 @@ body #area-geral .tela-inicial .tela-login .area-login .area-inputs .criar span:
 
 body #area-geral .tela-inicial .tela-registro {
   width: 45%;
-  height: 100%;
+  height: 100vh;
   background: #e0f4fc;
   display: none;
   -webkit-transition: 0.8s;
@@ -369,7 +373,7 @@ body #area-geral .tela-inicial .tela-registro {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 560px;
+  min-height: 620px;
 }
 
 body #area-geral .tela-inicial .tela-registro .area-registro {
