@@ -594,7 +594,7 @@ body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .logar
         align-self: center;
   }
   body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input {
-    width: 105%;
+    width: 95%;
   }
   body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row {
     display: -webkit-box;
