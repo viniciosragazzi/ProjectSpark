@@ -1,0 +1,650 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Poppins;
+}
+
+:root {
+  --color-prin: #202442;
+  --color-sec:#30355e;
+  --color-terc:#2b3057;
+  --color-icons:#6f6f75;
+  --color-span:#2C72B2;
+  --color-titulo:#82A5CA;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, color-stop(45%, #13162b), color-stop(83%, #1f244b));
+  background: linear-gradient(90deg, #13162b 45%, #1f244b 83%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #area-geral {
+  width: 80vw;
+  height: 95vh;
+  background-color: var(--color-prin);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+body #area-geral .tela-inicial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body #area-geral .tela-inicial .area-bv {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, #0c0e1c), color-stop(72%, #181c34));
+  background: linear-gradient(180deg, #0c0e1c 34%, #181c34 72%);
+  width: 60%;
+  height: 100%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+}
+
+body #area-geral .tela-inicial .area-bv .area1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #area-geral .tela-inicial .area-bv .area1 a {
+  position: relative;
+  bottom: 111px;
+  text-align: center;
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.8s forwards;
+          animation: surgir1 1s 0.8s forwards;
+}
+
+body #area-geral .tela-inicial .area-bv .area1 a img {
+  width: 300px;
+}
+
+body #area-geral .tela-inicial .area-bv .area1 h2 {
+  color: #d1e4fc;
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.6s forwards;
+          animation: surgir1 1s 0.6s forwards;
+}
+
+body #area-geral .tela-inicial .area-bv .area2 {
+  color: #d1e4fc;
+  margin-top: 80px;
+}
+
+body #area-geral .tela-inicial .area-bv .area2 p {
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.7s forwards;
+          animation: surgir1 1s 0.7s forwards;
+}
+
+body #area-geral .tela-inicial .area-bv .area2 i {
+  color: #a1c0e7;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+body #area-geral .tela-inicial .area-bv .area2 .area-icons i {
+  font-size: 30px;
+  padding: 10px;
+  color: #94d8ff;
+  cursor: pointer;
+  -webkit-transform: 0.5s;
+          transform: 0.5s;
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.8s forwards;
+          animation: surgir1 1s 0.8s forwards;
+}
+
+body #area-geral .tela-inicial .area-bv .area2 .area-icons i:hover {
+  color: #8ac8ec;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+body #area-geral .tela-inicial .tela-login {
+  width: 45%;
+  height: 100%;
+  padding: 20px;
+  background: #e0f4fc;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 35px;
+  border-right: var(--color-terc) 3px solid;
+  min-height: 560px;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login h3 {
+  font-weight: 600;
+  font-size: 31px;
+  color: #82A5CA;
+  opacity: 0;
+  -webkit-animation: surgir1 1s forwards;
+          animation: surgir1 1s forwards;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login h3 span {
+  color: #2C72B2;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login p {
+  color: var(--color-icons);
+  font-size: 13px;
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.4s forwards;
+          animation: surgir1 1s 0.4s forwards;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login p span {
+  color: #2C72B2;
+  font-weight: 600;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group label {
+  color: #868d94;
+  font-size: 12px;
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.6s forwards;
+          animation: surgir1 1s 0.6s forwards;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input {
+  border-color: none;
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.8s forwards;
+          animation: surgir1 1s 0.8s forwards;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input:invalid {
+  border-color: #ff2f2f;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input::-webkit-input-placeholder {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input:-ms-input-placeholder {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input::-ms-input-placeholder {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input::placeholder {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input:focus::-webkit-input-placeholder {
+  font-size: 12px;
+  position: relative;
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+  padding-left: 8px;
+  color: #6d96c2;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input:focus:-ms-input-placeholder {
+  font-size: 12px;
+  position: relative;
+  transform: translateY(-12px);
+  padding-left: 8px;
+  color: #6d96c2;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input:focus::-ms-input-placeholder {
+  font-size: 12px;
+  position: relative;
+  transform: translateY(-12px);
+  padding-left: 8px;
+  color: #6d96c2;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group input:focus::placeholder {
+  font-size: 12px;
+  position: relative;
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+  padding-left: 8px;
+  color: #6d96c2;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.9s forwards;
+          animation: surgir1 1s 0.9s forwards;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar input#remember {
+  display: none;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar input#remember:checked + .lembrar i {
+  color: #0caa68;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar input#remember:checked + .lembrar label {
+  font-weight: 600;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .lembrar label {
+  color: #2C72B2;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .lembrar i {
+  color: #497196;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .esqueceu a {
+  color: #2C72B2;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .esqueceu a:hover {
+  font-weight: 600;
+  color: #174c7e;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs a {
+  width: 120px;
+  height: 45px;
+  margin-top: 13px;
+  border-radius: 15px;
+  padding-top: 10px;
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.9s forwards;
+          animation: surgir1 1s 0.9s forwards;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .criar {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .criar span {
+  cursor: pointer;
+}
+
+body #area-geral .tela-inicial .tela-login .area-login .area-inputs .criar span:hover {
+  color: var(--color-sec);
+}
+
+body #area-geral .tela-inicial .tela-registro {
+  width: 45%;
+  height: 100%;
+  background: #e0f4fc;
+  display: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 560px;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro h3 {
+  font-weight: 600;
+  font-size: 31px;
+  color: #82A5CA;
+  opacity: 0;
+  -webkit-animation: surgir1 1s forwards;
+          animation: surgir1 1s forwards;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro h3 span {
+  color: #2C72B2;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro p {
+  color: var(--color-icons);
+  font-size: 13px;
+  padding-left: 10px;
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.4s forwards;
+          animation: surgir1 1s 0.4s forwards;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro p span {
+  color: #2C72B2;
+  font-weight: 600;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group label {
+  color: #868d94;
+  font-size: 12px;
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.6s forwards;
+          animation: surgir1 1s 0.6s forwards;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input {
+  border-color: none;
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.8s forwards;
+          animation: surgir1 1s 0.8s forwards;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input:invalid {
+  border-color: #ff2f2f;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input::-webkit-input-placeholder {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input:-ms-input-placeholder {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input::-ms-input-placeholder {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input::placeholder {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input:focus::-webkit-input-placeholder {
+  font-size: 12px;
+  position: relative;
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+  padding-left: 8px;
+  color: #6d96c2;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input:focus:-ms-input-placeholder {
+  font-size: 12px;
+  position: relative;
+  transform: translateY(-12px);
+  padding-left: 8px;
+  color: #6d96c2;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input:focus::-ms-input-placeholder {
+  font-size: 12px;
+  position: relative;
+  transform: translateY(-12px);
+  padding-left: 8px;
+  color: #6d96c2;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input:focus::placeholder {
+  font-size: 12px;
+  position: relative;
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+  padding-left: 8px;
+  color: #6d96c2;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  opacity: 0;
+  -webkit-animation: surgir1 1s 0.8s forwards;
+          animation: surgir1 1s 0.8s forwards;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row button {
+  width: 120px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .logar {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 30px;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .logar span {
+  cursor: pointer;
+}
+
+body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .logar span:hover {
+  color: var(--color-sec);
+}
+
+@media (min-width: 730px) and (max-width: 936px) {
+  .area-bv .area1 h2 {
+    display: none;
+  }
+  body #area-geral .tela-inicial .area-bv {
+    width: 45%;
+  }
+  body #area-geral .tela-inicial .tela-registro {
+    width: 55%;
+  }
+  body #area-geral .tela-inicial .tela-login {
+    width: 55%;
+  }
+}
+
+@media (max-width: 773px) {
+  body #area-geral .tela-inicial .area-bv {
+    display: none;
+  }
+  body #area-geral .tela-inicial .tela-registro {
+    width: 100%;
+  }
+  body #area-geral .tela-inicial .tela-login {
+    padding-top: 22px;
+    width: 150%;
+  }
+  body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row .form-inline .custom-select {
+    width: 71%;
+  }
+}
+
+@media (max-width: 423px) {
+  body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row button {
+    width: 118px;
+    height: 49px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  body #area-geral .tela-inicial .tela-registro .area-registro h3 {
+    font-size: 24px;
+  }
+  body #area-geral .tela-inicial .tela-login .area-login .texto-topo {
+    display: none;
+  }
+  body #area-geral .tela-inicial .tela-registro .area-registro p.texto-topo {
+    display: none;
+  }
+  body #area-geral .tela-inicial .tela-login .area-login .area-inputs .criar p {
+    font-size: 13px;
+    margin-top: 50px;
+  }
+  body #area-geral .tela-inicial .form-control {
+    width: 130%;
+  }
+  body #area-geral .tela-inicial .tela-login .area-login .area-inputs button {
+    margin-bottom: 35px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input {
+    width: 100%;
+  }
+  body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row .form-inline .custom-select {
+    width: 54%;
+  }
+  body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .lembrar label {
+    font-size: 11px;
+  }
+  body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .esqueceu a {
+    font-size: 11px;
+  }
+  body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group label {
+    font-size: 12px;
+  }
+  body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group label {
+    font-size: 12px;
+  }
+  body #area-geral .tela-inicial .tela-login {
+    padding-top: 19px;
+  }
+}
+
+@media (display-mode: fullscreen) {
+  body #area-geral {
+    width: 80vw;
+    height: 85vh;
+  }
+}
+
+@-webkit-keyframes surgir1 {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes surgir1 {
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=login.css.map */

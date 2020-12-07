@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    
+}
+:root{
+    --color-prin: #202442;
+    --color-sec :#30355e;
+    --color-terc:#2b3057;
+    --color-icons:#6f6f75;
+    --color-span:#2C72B2;
+    --color-titulo:#82A5CA;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, #13162b 45%, #1f244b 83%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    #area-geral{
+        width: 80vw;
+        height: 95vh;
+        background-color: var(--color-prin);
+        border-radius: 10px;
+        overflow: hidden;
+            .tela-inicial{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+                transition: 0.8s;
+                
+                    .area-bv{
+                        background: linear-gradient(180deg, #0c0e1c 34%, #181c34 72%);
+                        
+                        width: 60%;
+                        height: 100%;
+                        
+                        transition: 0.8s;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        color: white;
+                        .area1{
+                            display: flex;
+                            justify-content: center;
+                            
+                            
+                            a{
+                                position: relative;
+                                bottom: 111px;
+                                text-align: center;
+                                opacity: 0;
+                                            animation: surgir1 1s 0.8s forwards;
+                                img{
+                                    width: 300px;
+                                }
+                            }
+                            h2{
+                                color:#d1e4fc;
+                                opacity: 0;
+                                            animation: surgir1 1s 0.6s forwards;
+                            }
+                        }
+                        .area2{
+                            color:#d1e4fc ;
+                            margin-top: 80px;
+                            p{
+                                opacity: 0;
+                                            animation: surgir1 1s 0.7s forwards;
+                            }
+                            i{
+                                color: #a1c0e7;
+                                padding-left: 5px;
+                                padding-top: 5px;
+                                
+                            }
+                            .area-icons{
+                                i{
+                                    font-size: 30px;
+                                    padding: 10px;
+                                    color: rgb(148, 216, 255);
+                                    cursor: pointer;
+                                    transform: 0.5s;
+                                    opacity: 0;
+                                            animation: surgir1 1s 0.8s forwards;
+                                    &:hover{
+                                        color: rgb(138, 200, 236);
+                                        transform: translateY(-5px);
+                                    }
+                                }
+                            }
+                        }
+                            
+                           
+
+                        }
+                    .tela-login{
+                        width: 45%;
+                        height: 100%;
+                        padding: 20px;
+                        background:rgb(224, 244, 252);
+                        transition: 0.8s;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        padding-top: 35px;
+                        border-right: var(--color-terc) 3px solid;
+                        min-height: 560px;
+                        .area-login{
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            h3{
+                                font-weight: 600;
+                                font-size: 31px;
+                                color:#82A5CA ;
+                                opacity: 0;
+                                animation: surgir1 1s forwards;
+                                span{
+                                    color:#2C72B2 ;
+                                }
+                            }
+                            p{
+                                color: var(--color-icons);
+                                font-size: 13px;
+                                opacity: 0;
+                                animation: surgir1 1s 0.4s forwards;
+                                span{
+                                    color: #2C72B2;
+                                    font-weight: 600;
+                                }
+                            }
+                            .area-inputs{
+                                .form-group{
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 80%;
+                                        label{
+                                            color: #868d94;
+                                            font-size: 12px;
+                                            opacity: 0;
+                                            animation: surgir1 1s 0.6s forwards;
+                                        }
+                                        input{
+                                            border-color: none;
+                                            opacity: 0;
+                                            animation: surgir1 1s 0.8s forwards;
+                                            
+                                            &:invalid{
+                                                border-color: rgb(255, 47, 47);
+                                            }
+    
+                                            &::placeholder{
+                                                transition: 0.3s;
+                                                font-size:12px;
+                                            }
+                                            &:focus{
+                                                &::placeholder{
+                                                    font-size: 12px;
+                                                    position: relative;
+                                                    
+                                                    transform: translateY(-12px);
+                                                    padding-left:8px ;
+                                                    
+                                                    color: rgb(109, 150, 194);
+                                                }
+                                            }
+                                           
+                                        }
+                                }
+                                .area-recuperar{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    opacity: 0;
+                                            animation: surgir1 1s 0.9s forwards;
+                                    input{
+                                        &#remember{
+                                            display: none;
+                                            &:checked + .lembrar{
+                                                & i{
+                                                    color: rgb(12, 170, 104);
+                                                }
+                                                & label{
+                                                    font-weight: 600;
+                                                }
+                                            }
+                                        }
+                                        
+                                        
+                                    }
+                                    .lembrar{
+                                        label{
+                                            color: #2C72B2;
+                                            font-size: 13px;
+                                            cursor: pointer;
+                                        }
+                                        i{
+                                            color: #497196;
+                                        }
+                                    }
+                                    .esqueceu{
+                                        a{
+                                            color: #2C72B2;
+                                            text-decoration: none;
+                                            font-size: 13px;
+    
+                                            &:hover{
+                                                font-weight: 600;
+                                                color:#174c7e;
+                                            }
+                                        }
+                                    }
+                                }
+                                a{
+                                    width: 120px;
+                                    height: 45px;
+                                    margin-top: 13px;
+                                    border-radius: 15px;
+                                    padding-top: 10px;
+                                    opacity: 0;
+                                    animation: surgir1 1s 0.9s forwards;
+                                }
+                                .criar{
+                                    justify-content: center;
+                                    align-items: center;
+                                    display: flex;
+                                    margin-top: 25px;
+
+                                    span{
+                                        cursor: pointer;
+                                                &:hover{
+                                                    color: var(--color-sec);
+                                                }
+                                            }
+                                    }
+                                }
+                            }
+                            
+                        }
+                    .tela-registro{
+                        width: 45%;
+                        height: 100%;
+                        background:rgb(224, 244, 252);
+                        display:none;
+                        transition: 0.8s;
+                        align-items: center;
+                        min-height: 560px;
+                        .area-registro{
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            h3{
+                                font-weight: 600;
+                                font-size: 31px;
+                                color:#82A5CA ;
+                                opacity: 0;
+                                animation: surgir1 1s forwards;
+                                span{
+                                    color:#2C72B2 ;
+                                }
+                            }
+                            p{
+                                color: var(--color-icons);
+                                font-size: 13px;
+                                padding-left: 10px;
+                                opacity: 0;
+                                animation: surgir1 1s 0.4s forwards;
+                                span{
+                                    color: #2C72B2;
+                                    font-weight: 600;
+                                }
+                            }
+                            
+                            .area-inputs{
+                                display: flex;
+                                flex-direction: column;
+                                
+                                .form-group{
+                                    display: flex;
+                                    flex-direction: column;
+                                    
+                                        label{
+                                            color: #868d94;
+                                            font-size: 12px;
+                                            opacity: 0;
+                                            animation: surgir1 1s 0.6s forwards;
+    
+                                        }
+                                        input{
+                                            border-color: none;
+                                            opacity: 0;
+                                            animation: surgir1 1s 0.8s forwards;
+                                            &:invalid{
+                                                border-color: rgb(255, 47, 47);
+                                            }
+    
+                                            &::placeholder{
+                                                transition: 0.3s;
+                                                font-size:14px;
+                                            }
+                                            &:focus{
+                                                &::placeholder{
+                                                    font-size: 12px;
+                                                    position: relative;
+                                                    
+                                                    transform: translateY(-12px);
+                                                    padding-left:8px ;
+                                                    
+                                                    color: rgb(109, 150, 194);
+                                                }
+                                            }
+                                            
+                                        }
+                                        
+                                }
+                                .form-row{
+                                    display: flex;
+                                    justify-content: space-around;
+                                    opacity: 0;
+                                    animation: surgir1 1s 0.8s forwards;
+                                    button{
+                                        width: 120px;
+                                        height: 50px;
+                                        
+                                        border-radius: 15px;
+    
+                                    
+                                    }
+                                }
+                                .logar{
+                                    align-self: center;
+                                    margin-top: 30px;
+                                        span{
+                                            cursor: pointer;
+                                            &:hover{
+                                                color: var(--color-sec);
+                                            }
+                                        }
+                                }
+                            }
+                        }
+                        }
+                    }
+                    
+
+            }
+        
+
+    
+}
+
+@media (min-width:730px) and (max-width:936px){
+    .area-bv .area1 h2 {
+        
+        display: none;
+    }
+    body #area-geral .tela-inicial .area-bv {
+        width: 45%;
+    }
+    body #area-geral .tela-inicial .tela-registro {
+        width: 55%;
+    }
+    body #area-geral .tela-inicial .tela-login {
+        width: 55%;
+    }
+}
+
+@media(max-width:773px){
+    body #area-geral .tela-inicial .area-bv {
+        display: none;
+    }
+    body #area-geral .tela-inicial .tela-registro {
+        width: 100%;
+    }
+    body #area-geral .tela-inicial .tela-login {
+        padding-top: 22px;
+        width: 150%;
+    }
+    body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row .form-inline .custom-select { 
+        width: 71%;
+    }
+    
+        
+}
+
+@media(max-width:423px){
+    body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row button {
+        width: 118px;
+        height: 49px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    body #area-geral .tela-inicial .tela-registro .area-registro h3 {
+      
+        font-size: 24px;
+    }
+    body #area-geral .tela-inicial .tela-login .area-login .texto-topo{
+        display: none;
+    }
+    body #area-geral .tela-inicial .tela-registro .area-registro p.texto-topo {
+        display: none;
+    }
+    body #area-geral .tela-inicial .tela-login .area-login .area-inputs .criar p{
+        font-size: 13px;
+        margin-top: 50px;
+    }
+    body #area-geral .tela-inicial .form-control{
+        width: 130%;
+    }
+    body #area-geral .tela-inicial .tela-login .area-login .area-inputs button {
+        margin-bottom: 35px;
+        align-self: center;
+    }
+    body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group input {
+        width: 100%;
+    }
+    body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row {
+        
+        display: flex;
+        flex-direction: column;
+    }
+    body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-row .form-inline .custom-select {
+        width: 54%;
+
+       
+
+    }
+    body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .lembrar label {
+       
+        font-size: 11px;
+      
+    }
+    body #area-geral .tela-inicial .tela-login .area-login .area-inputs .area-recuperar .esqueceu a {
+       
+        font-size: 11px;
+    }
+    body #area-geral .tela-inicial .tela-registro .area-registro .area-inputs .form-group label {
+     
+        font-size: 12px;
+    }
+    body #area-geral .tela-inicial .tela-login .area-login .area-inputs .form-group label {
+      
+        font-size: 12px;
+      
+    }
+    body #area-geral .tela-inicial .tela-login {
+      
+        padding-top: 19px;
+    }
+    
+}
+@media (display-mode: fullscreen) {
+    body #area-geral {
+        width: 80vw;
+        height: 85vh;
+    }
+}
+    
+@keyframes surgir1{
+    100%{
+        opacity: 1;
+    }
+}

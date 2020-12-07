@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  src: url(../css/icons-fontAwer/css/all.min.css);
+  font-family: 'Font Awersome 5 Free';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Poppins;
+}
+
+:root {
+  --color-prin: #12152b;
+  --color-sec:#30355e;
+  --color-terc:#2b3057;
+  --color-icons:#9999a0;
+  --color-span:#2C72B2;
+  --color-titulo:#82A5CA;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1a204d;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #077db4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-terc);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, color-stop(45%, #373d70), color-stop(83%, #1f244b));
+  background: linear-gradient(90deg, #373d70 45%, #1f244b 83%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #tela {
+  width: 85vw;
+  height: 95vh;
+  background-color: var(--color-prin);
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body #tela .topo {
+  width: 100vw;
+  height: 80px;
+  background-color: var(--color-prin);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid  #2C72B2;
+  z-index: 1;
+  margin-left: 10%;
+  padding-left: 30px;
+}
+
+body #tela .topo .search-box {
+  background: var(--color-prin);
+  height: 40px;
+  border-radius: 40px;
+  padding: 15px;
+  padding-bottom: 50px;
+  cursor: pointer;
+}
+
+body #tela .topo .search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+body #tela .topo .search-box .search-btn {
+  color: #2C72B2;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-prin);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 8px;
+}
+
+body #tela .topo .search-box .search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  color: white;
+  font-size: 16px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  line-height: 30px;
+  width: 0;
+}
+
+body #tela .topo .search-box .search-txt::-webkit-input-placeholder {
+  font-size: 15px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+body #tela .topo .search-box .search-txt:-ms-input-placeholder {
+  font-size: 15px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+body #tela .topo .search-box .search-txt::-ms-input-placeholder {
+  font-size: 15px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+body #tela .topo .search-box .search-txt::placeholder {
+  font-size: 15px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+body #tela .topo .search-box .search-txt:focus::-webkit-input-placeholder {
+  font-size: 12px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  padding-left: 5px;
+  color: #2C72B2;
+}
+
+body #tela .topo .search-box .search-txt:focus:-ms-input-placeholder {
+  font-size: 12px;
+  transform: translateY(-5px);
+  padding-left: 5px;
+  color: #2C72B2;
+}
+
+body #tela .topo .search-box .search-txt:focus::-ms-input-placeholder {
+  font-size: 12px;
+  transform: translateY(-5px);
+  padding-left: 5px;
+  color: #2C72B2;
+}
+
+body #tela .topo .search-box .search-txt:focus::placeholder {
+  font-size: 12px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  padding-left: 5px;
+  color: #2C72B2;
+}
+
+body .menu-lateral {
+  width: 9%;
+  height: 95vh;
+  border-right: 1px solid #2C72B2;
+  background-color: var(--color-prin);
+  position: fixed;
+  z-index: 2;
+}
+
+body .area-conteudo {
+  color: white;
+  margin-left: 12%;
+  overflow: hidden;
+}
+/*# sourceMappingURL=principal.css.map */
